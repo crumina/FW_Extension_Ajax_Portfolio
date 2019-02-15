@@ -1,0 +1,137 @@
+
+.ajax-portfolio-panel-links {
+    margin: 50px 0;
+    padding: 0;
+    list-style: none;
+}
+
+.ajax-portfolio-panel-links li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.load-more-spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    transition: all .3s ease;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ajax-portfolio-panel-links li a > span {
+    transition: all .3s ease;
+    opacity: 1;
+}
+
+.ajax-portfolio-panel-links li.loading a > span {
+    opacity: 0;
+}
+
+.ajax-portfolio-panel-links li.loading .load-more-spinner {
+    opacity: 1;
+    visibility: visible;
+}
+
+.ajax-portfolio-panel-links li a {
+    font-size: 17px;
+    position: relative;
+    text-transform: capitalize;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.ajax-portfolio-nav-loadmore.loading .load-more-spinner,
+.portfolio-nav-numbers .page-numbers.loading .load-more-spinner,
+.ajax-portfolio-nav-links .next.loading .load-more-spinner,
+.ajax-portfolio-nav-links .prev.loading .load-more-spinner {
+    display: inline-block;
+    opacity: 1;
+    visibility: visible;
+}
+
+.ajax-portfolio-nav-loadmore > span {
+    transition: all .3s ease;
+    opacity: 1;
+}
+
+.ajax-portfolio-nav-loadmore.loading > span {
+    opacity: 0;
+}
+
+.ajax-portfolio-nav-links {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.ajax-portfolio-nav-links .next > span,
+.ajax-portfolio-nav-links .prev > span {
+    transition: all .3s ease;
+    opacity: 1;
+}
+
+.ajax-portfolio-nav-links .next.loading > span,
+.ajax-portfolio-nav-links .prev.loading > span {
+    opacity: 0;
+}
+
+.ajax-portfolio-nav-links .next,
+.ajax-portfolio-nav-links .prev {
+    position: relative;
+}
+
+.ajax-portfolio-nav-links .next {
+    float: right;
+}
+
+.ajax-portfolio-nav-links .prev {
+    float: left;
+}
+
+.ajax-portfolio-nav-links .btn-next,
+.ajax-portfolio-nav-links .btn-prev {
+    position: relative;
+}
+
+.ajax-portfolio-nav-links .btn-next,
+.ajax-portfolio-nav-links .btn-prev,
+.portfolio-nav-numbers .btn-next,
+.portfolio-nav-numbers .btn-prev {
+    position: relative;
+    transform: translate(0);
+    top: auto;
+    right: auto;
+    left: auto;
+}
+
+.ajax-portfolio-nav-links .btn-next {
+    float: right;
+}
+
+.ajax-portfolio-nav-links .btn-prev {
+    float: left;
+}
+
+.portfolio-nav-numbers .page-numbers > span {
+    transition: all .3s ease;
+    opacity: 1;
+}
+
+.portfolio-nav-numbers .page-numbers.loading > span {
+    opacity: 0;
+}
+
+.clearfix {
+    width: 100%;
+    display: block;
+    clear: both;
+}
+
+.text-danger {
+    color: #FF797D;
+}
